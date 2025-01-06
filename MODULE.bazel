@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-bazel_dep(name = "hedron_compile_commands", dev_dependency = True)
+bazel_dep(name = "hedron_compile_commands", version = "0", dev_dependency = True)
 git_override(
     module_name = "hedron_compile_commands",
     commit = "0e990032f3c5a866e72615cf67e5ce22186dcb97",
