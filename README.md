@@ -6,11 +6,16 @@ Then replace the current `h1` with the Renovate Issue/Discussion number.
 
 ## Current behavior
 
-Explain the current behavior here.
+Renovate doesn’t find the dependency on `hedron_compile_commands`.  The debug
+logs show something along the lines of
+
+    DEBUG: Matched 1 file(s) for manager bazel-module: MODULE.bazel
+    DEBUG: A 'bazel_dep' was not found for 'hedron_compile_commands'.
 
 ## Expected behavior
 
-Explain the expected behavior here.
+Renovate should find the dependency, even if there’s no `version` attribute in
+`bazel_dep`.
 
 ## Link to the Renovate issue or Discussion
 
